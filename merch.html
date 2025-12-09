@@ -8,43 +8,50 @@
     <link rel="stylesheet" href="styles.css">
 
     <style>
-        /* The container class you already have will handle the row layout */
+        /* Container for all merchandise items */
         .container {
             display: flex;
-            /* Added spacing between the items in the row */
             flex-wrap: wrap;
             gap: 20px; 
-            /* Centers the row content if it doesn't fill the screen */
             justify-content: center;
-            /* Added margin below each section for spacing */
             margin-bottom: 40px; 
         }
 
-        /* New style for the individual item wrapper */
+
         .merch-item {
-            /* This ensures the text stays directly below the image */
+            /*text stays directly below the image */
             display: flex;
             flex-direction: column;
-            /* Centers the image and text horizontally */
             align-items: center; 
             text-align: center;
         }
 
         /* Style for the text below the image */
         .merch-caption {
-            /* Added margin to separate text from image */
-            margin-top: 10px;
-            font-size: 1.1em; /* Adjust size as needed */
+            margin-top: 10px; /*seperate image and text*/
+            font-size: 1.1em; 
             font-weight: bold;
         }
-
+        /* Ensure images are responsive */
         .merch-item img {
             width: 100%;
             height: auto;
             max-width: 300px;
         }
-
+        /* Responsive adjustments for smaller screens */
         @media (max-width: 768px) {
+
+            /* Nav becomes stacked */
+
+
+            .nav {
+                flex-direction: column;
+            }
+
+            .nav li {
+                font-size: 20px;
+                padding: 8px;
+            }
             .container {
                 gap: 10px;
             }
@@ -68,13 +75,13 @@
 <body>
     <div>
         <ul class="nav">
-            <li><a href="" target="_blank">Home</bR></a></li>
-            <li><a href="" target="_blank">Music<br></a></li>
-            <li><a href="" target="_blank">Merchandaise</a></li>
+            <li><a href="index.html" target="_blank">Home</bR></a></li>
+            <li><a href="music.html" target="_blank">Music<br></a></li>
+            <li><a href="merch.html" target="_blank">Merchandaise</a></li>
         </ul>
     </div>
 
-    <section class="container">
+    <section class="container"> <!--first row of items-->
         <div class="merch-item">
             <img src="/img/confrontationvinyl.webp" width="500" height="500">
             <p class="merch-caption">Confrontation Vinyl - $25.00</p>
@@ -91,7 +98,7 @@
         </div>
     </section>
 
-    <section class="container">
+    <section class="container"><!--second row of items-->
         <div class="merch-item">
             <img src="/img/shirt1.webp" width="500" height="400">
             <p class="merch-caption">Rastaman Vibration Tee - $50.00</p>

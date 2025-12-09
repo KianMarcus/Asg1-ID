@@ -12,14 +12,14 @@
 
     color: white;}
 
-
+/* Container for all album sections */
 .container{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         gap:20px;
       }
-
+/* Each album section */
       .split{
         display: flex;
 
@@ -27,28 +27,42 @@
         flex-direction: column;
         justify-content: flex-start;
         width:500px;}
-
+/* Style for the text list */
 .split li {
     color: white;
     font-size: 25px;
 }
-hr { /* CHANGE: Removed the dot */
-    border: none; /* Reset the browser's default 3D border */
-    border-top: 1px solid white; /* Apply your desired white line */
-    margin: 10px 0; /* Add a little space above and below */
+/* Style for the horizontal rule */
+hr { 
+    border: none;
+    border-top: 1px solid white;
+    margin: 10px 0; 
 }
 .page-title {
-        text-align: center; /* ONLY THIS one is centered */
-        margin-bottom: 20px; /* Optional: adds separation below the title */
+        text-align: center; 
+        margin-bottom: 20px; 
     }
+/* Style for album images */
 .split img {
     width: 100%;
     max-width: 350px;  /* adjustable */
     height: auto;
     border-radius: 5px;
 }
-
+/* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
+
+    /* Nav becomes stacked */
+
+
+    .nav {
+        flex-direction: column;
+    }
+
+    .nav li {
+        font-size: 20px;
+        padding: 8px;
+    }    
     .container {
         flex-direction: column;
         align-items: center;
@@ -79,23 +93,23 @@ hr { /* CHANGE: Removed the dot */
 <body>
      <div>
         <ul class="nav">
-            <li><a href="" target="_blank">Home</bR></a></li>
-            <li><a href="" target="_blank">Music<br></a></li>
-            <li><a href="" target="_blank">Merchandaise</a></li>
+            <li><a href="index.html" target="_blank">Home</bR></a></li>
+            <li><a href="music.html" target="_blank">Music<br></a></li>
+            <li><a href="merch.html" target="_blank">Merchandaise</a></li>
         </ul>
     </div>
 <br>
 <br>
 
 
-<section class="container">
+<section class="container"><!--first album section-->
     <div class="split">
         <img src="/img/confrontation.jpg"">   
     </div>
     <div class="split">
         <h2>Confrontation</h2>
         <hr>
-        <ul>
+        <ul><!--list of songs-->
             <li>Chant Down Babylon</li>
             <li>Buffalo Soldier</li>
             <li>Jump Nyabinghi</li>
@@ -110,14 +124,14 @@ hr { /* CHANGE: Removed the dot */
 </section>
 
 
-<section class="container">
+<section class="container"><!--second album section-->
     <div class="split">
         <img src="/img/survival.jpg">   
     </div>
     <div class="split">
         <h2>Survival</h2>
         <hr>
-        <ul>
+        <ul><!--list of songs-->
             <li>So Much Trouble In The World</li>
             <li>Zimbabwe</li>
             <li>Top Rankin'</li>
@@ -132,14 +146,14 @@ hr { /* CHANGE: Removed the dot */
 </section>
 
 
-<section class="container">
+<section class="container"><!--third album section-->
     <div class="split">
         <img src="/img/kaya.jpg">   
     </div>
     <div class="split">
         <h2>Kaya</h2>
         <hr>
-        <ul>
+        <ul><!--list of songs-->
             <li>Easy Skanking</li>
             <li>Kaya</li>
             <li>Is This Love</li>
@@ -155,14 +169,14 @@ hr { /* CHANGE: Removed the dot */
 
 
 
-<section class="container">
+<section class="container"><!--fourth album section-->
     <div class="split">
         <img src="/img/uprising.jpg">   
     </div>
     <div class="split">
         <h2>Uprising</h2>
         <hr>
-        <ul>
+        <ul><!--list of songs-->
             <li>Coming In From The Cold</li>
             <li>Real Situation</li>
             <li>Bad Card</li>
