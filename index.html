@@ -6,6 +6,73 @@
     <title>Homepage</title>
     <link rel="stylesheet" href="Normalize.css">
     <link rel="stylesheet" href="styles.css">
+
+
+
+<style>
+
+@media (max-width: 768px) {
+
+  /* Nav becomes stacked */
+  .nav {
+    flex-direction: column;
+  }
+
+  .nav li {
+    font-size: 20px;
+    padding: 8px;
+  }
+
+  /* Hero section becomes shorter */
+  .div1 {
+    height: 400px;
+    justify-content: center;
+  }
+
+  .div1 h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  /* Paragraphs scale down */
+  p {
+    font-size: 18px;
+  }
+
+  h {
+    font-size: 24px;
+  }
+
+  /* Stack your flex rows instead of side-by-side */
+  .row {
+    flex-direction: column;
+  }
+
+  .side1,
+  .side2,
+  .side3 {
+    width: 90%;
+    margin: 10px auto;
+    flex: none;
+  }
+
+  .side1,
+  .side3 {
+    height: 200px;
+  }
+
+  /* Dropdown button text smaller on mobile */
+  .dropbtn {
+    font-size: 18px;
+  }
+
+  .dropdown-content p {
+    font-size: 16px;
+  }
+}
+
+</style>
+
 </head>
 
 <body>
@@ -13,9 +80,7 @@
         <ul class="nav">
             <li><a href="" target="_blank">Home</bR></a></li>
             <li><a href="" target="_blank">Music<br></a></li>
-            <li><a href="" target="_blank">Tours<br></a></li>
             <li><a href="" target="_blank">Merchandaise</a></li>
-            <li><a href="" target="_blank">Catalogue</a></li>
         </ul>
     </div>
 
@@ -28,7 +93,7 @@
     <br>
 
     <div class="div2">
-        <h>Music</h>
+        <h2>Music</h2>
         <br>
         <p>Bob Marley's music is the definitive sound of reggae, which he globalized by blending its distinctive One Drop rhythm and syncopated guitar 'skanks' with elements of rock, soul, and R&B. More than just infectious melodies, his songs served as a powerful vehicle for his Rastafari faith and deeply felt messages of social justice, unity, and spiritual liberation. Growing up in impoverished Trenchtown, his lyrics addressed systemic oppression, political violence, and the struggles of the marginalized (e.g., "Get Up, Stand Up," "No Woman, No Cry"), while simultaneously offering hopeful, universal calls for peace and love (e.g., "One Love," "Three Little Birds"). Marley’s music thus transcended entertainment to become a global anthem for resistance and hope, cementing his legacy as a cultural ambassador for Jamaica and a prophetic voice for the world's oppressed.
 
@@ -54,7 +119,30 @@
 
         <div class="side3">
         </div>
+        </div>
+        <br>
+
+    <div class="dropdown">
+    <button onclick="toggleDropdown()" class="dropbtn">
+       > BOB MARLEY - ONE LOVE ASIA TOUR 
+    </button>
+
+    <div id="dropdownMenu" class="dropdown-content">
+        <p>1 JAN - SINGAPORE</p>
+        <p>4 JAN - MALAYSIA</p>
+        <p>6 JAN - INDONESIA</p>
+        <p>10 JAN - PHILIPPINES</p>
+        <p>20 JAN - THAILAND</p>
+        
+    </div>
+    </div>
+    <footer>
+        <p>Instragram - @Bob_Marley</p>
+        <p>Email - Bobmarley@gmail.com</p>
+    </footer>
 
 
+
+    <script src="styles.js"></script>
 </body>
 </html>

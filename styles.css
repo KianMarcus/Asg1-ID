@@ -24,10 +24,10 @@ list-style: none;
 
 .nav a{padding:10px;
 text-decoration: none;
-color:yellow;}
+color:white;}
 
 .nav a:hover{
-color:white;
+color:yellow;
 
 }
 
@@ -41,6 +41,7 @@ color:white;
     background-image: url(/img/bobmarley2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    min-height: 60vh;
 }
 
 .div1 h1{
@@ -65,10 +66,12 @@ color:white;
 p {color: white;
 font-size: 30px;}
 
-h {color:white;
-font-size: 40px;}
 
 
+h2 {
+  color: white;
+  font-size: 40px;
+}
 
 
 .side1{flex:0 0 20%;
@@ -119,3 +122,55 @@ border-radius: 50px;
 background-image: url(/img/.jpg);
 background-size: cover;
 }}
+
+
+
+
+
+/* Container */
+/* Make the container full width */
+.dropdown {
+  width: 100%;
+  position: relative;
+}
+
+/* Button */
+.dropbtn {
+  background: transparent; 
+  font-size: 24px;       /* no fill */
+  color: white;
+  border: 2px solid yellow;       /* yellow border */
+  padding: 10px 15px;
+  cursor: pointer;
+  width: 100%;                    /* make button full width */
+}
+
+/* Dropdown Content */
+.dropdown-content {
+  width: 100%;
+  display: none;
+  position: relative;         /* change from absolute */
+  background-color: black;
+  border: 2px solid yellow;   /* yellow border */
+  box-sizing: border-box;
+}
+
+/* Links inside dropdown */
+.dropdown-content p {
+  color: white;
+  padding: 10px 12px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-size: 20px;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+}

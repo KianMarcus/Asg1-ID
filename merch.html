@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merchandaise</title>
+    <link rel="stylesheet" href="Normalize.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* The container class you already have will handle the row layout */
+        .container {
+            display: flex;
+            /* Added spacing between the items in the row */
+            flex-wrap: wrap;
+            gap: 20px; 
+            /* Centers the row content if it doesn't fill the screen */
+            justify-content: center;
+            /* Added margin below each section for spacing */
+            margin-bottom: 40px; 
+        }
+
+        /* New style for the individual item wrapper */
+        .merch-item {
+            /* This ensures the text stays directly below the image */
+            display: flex;
+            flex-direction: column;
+            /* Centers the image and text horizontally */
+            align-items: center; 
+            text-align: center;
+        }
+
+        /* Style for the text below the image */
+        .merch-caption {
+            /* Added margin to separate text from image */
+            margin-top: 10px;
+            font-size: 1.1em; /* Adjust size as needed */
+            font-weight: bold;
+        }
+
+        .merch-item img {
+            width: 100%;
+            height: auto;
+            max-width: 300px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                gap: 10px;
+            }
+
+            .merch-item {
+                width: 100%;      /* full width on mobile */
+            }
+
+            .merch-item img {
+                max-width: 90%;   /* shrink images */
+            }
+
+            .merch-caption {
+                font-size: 1em;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <ul class="nav">
+            <li><a href="" target="_blank">Home</bR></a></li>
+            <li><a href="" target="_blank">Music<br></a></li>
+            <li><a href="" target="_blank">Merchandaise</a></li>
+        </ul>
+    </div>
+
+    <section class="container">
+        <div class="merch-item">
+            <img src="/img/confrontationvinyl.webp" width="500" height="500">
+            <p class="merch-caption">Confrontation Vinyl - $25.00</p>
+        </div>
+        
+        <div class="merch-item">
+            <img src="/img/bobvinyl3.webp" width="500" height="500">
+            <p class="merch-caption">Legend Album Vinyl - $25.00</p>
+        </div>
+        
+        <div class="merch-item">
+            <img src="/img/uprisingvinyl.webp" width="500" height="500">
+            <p class="merch-caption">Uprising Vinyl - $25.00</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="merch-item">
+            <img src="/img/shirt1.webp" width="500" height="400">
+            <p class="merch-caption">Rastaman Vibration Tee - $50.00</p>
+        </div>
+        
+        <div class="merch-item">
+            <img src="/img/shirt2.webp" width="500" height="400">
+            <p class="merch-caption">Exodus Tour T-Shirt - $80.00</p>
+        </div>
+        
+        <div class="merch-item">
+            <img src="/img/shirt3.webp" width="500" height="400">
+            <p class="merch-caption">Kaya Album Art Tee - $50.00</p>
+        </div>
+    </section>
+</body>
+</html>
